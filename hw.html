@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="hw.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieBox</title>
+    <link
+      rel="icon"
+      href="https://cdn.dribbble.com/users/2264632/screenshots/6708631/final.gif"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-image rjs">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://i.pinimg.com/originals/43/3d/83/433d83f7e481f35245f8c6bb7c7591d8.gif"
+            alt=""
+            width="30"
+            height="26"
+            class="d-inline-block align-text-top"
+          /><span class="n" style="font-size: xx-large; color: goldenrod">
+            MovieBox</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active zoom"
+                style="color: goldenrod"
+                aria-current="page"
+                href="hw.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link zoom"
+                style="color: goldenrod"
+                href="download.html"
+                >Downloads</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle zoom"
+                style="color: goldenrod"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                WatchList
+              </a>
+              <ul
+                class="dropdown-menu"
+                style="color: goldenrod"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="trailer.html">Trailers</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <!-- <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link zoom"
+                style="color: goldenrod"
+                href="account.html"
+                >Account</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn btn-warning fonts m-2 zoom">
+              <a href="search.html">Search</a>
+            </button>
+            <button class="btn btn-warning fonts m-2 zoom" type="submit">
+              <a href="lg.html">Login</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="border-style: ridge; border-width: 8px; border-color: black"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active fontstyle">
+          <img
+            src="https://my5xi5jq5p-flywheel.netdna-ssl.com/wp-content/uploads/2020/06/lucifer.svg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Lucifer</h5>
+          </div>
+        </div>
+        <div class="carousel-item fontstyle">
+          <img
+            src="https://0c86e2d1-madman-com-au.akamaized.net/shows/demon-slayer_stage-key-art-normal-medium_58858.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Demon Slayer</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item fontstyle">
+          <img
+            src="https://s-media-cache-ak0.pinimg.com/originals/97/92/0e/97920e6bb9c6ea1ecd13ab8d85655b7e.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dunkirk</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item fontstyle">
+          <img
+            src="https://pbs.twimg.com/media/EYlnPwaUMAAU0O2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Justice League: Snyder's Cut</h5>
+          </div>
+        </div>
+        <div class="carousel-item fontstyle">
+          <img
+            src="https://my5xi5jq5p-flywheel.netdna-ssl.com/wp-content/uploads/2020/09/how-to-watch-fantasy-island.svg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fantasy island</h5>
+          </div>
+        </div>
+        <div class="carousel-item fontstyle">
+          <img
+            src="https://4k-hd.club/uploads/posts/2020-03/1583771141_jumanji-the-next-level-4k-2019.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Jumanji</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+             <div class="col-12 m-2 bg-light">   </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          Popular On Moviebox
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-image">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://www.desktopbackground.org/download/1600x900/2015/06/02/957863_how-i-met-your-mother-comedy-sitcom-series-television-how-met_1920x1200_h.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://wallpapercave.com/wp/wp7213393.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/the-big-bang-theory-4-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container bg-image fonts"
+      style="
+        border-style: ridge;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>How I met Your Mother</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Riverdale</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>My Hero Academia</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Friends</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          #1 in India
+        </div>
+      </div>
+    </div>
+    <div class="container bg-image text-light">
+      <div class="row">
+        <div class="img-fluid col-md-6">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStZ4zDT9hRPkNFR4s6D0tBVx-6eX31e09VBQ&usqp=CAU"
+            width="320px"
+            class="zoom"
+          />
+        </div>
+        <div class="col-md-6 fonts" text-light>
+          MONEY HEIST -(Spanish: La casa de papel, "The House of Paper") is a
+          Spanish heist crime drama television series created by Álex Pina. The
+          series traces two long-prepared heists led by the Professor (Álvaro
+          Morte), one on the Royal Mint of Spain, and one on the Bank of Spain,
+          told from the perspective of one of the robbers, Tokyo (Úrsula
+          Corberó). The narrative is told in a real-time-like fashion and relies
+          on flashbacks, time-jumps, hidden character motivations, and an
+          unreliable narrator for complexity.
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 m-20 p-2"></div>
+      </div>
+    </div>
+    <!-- <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4 mb-2 p-2  text-light  text-center  bg-image"
+        style="border-style:ridge;border-width: 5px; border-color: black;">Casual Viewing</div>
+    </div>
+  </div> -->
+
+    <!-- 
+  <div class="container bg-image text-light">
+    <div class="row"> -->
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          My List
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-image">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://cdn.wallpapersafari.com/61/42/uz5UBO.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/marvel-spider-man-miles-morales-iz-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.wallpapersden.com/image/download/the-lightning-flash-4k_bGtrbGeUmZqaraWkpJRma2VlrW5lZQ.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://wallpaperaccess.com/full/1455762.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container bg-image fonts"
+      style="
+        border-style: ridge;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Friends</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Spiderman:Into the Spider-Verse</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Flash</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Brooklyn Nine Nine</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          Trending Now
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-image">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://cdn.wallpapersafari.com/51/60/2NA5iV.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://images.wallpapersden.com/image/download/infinity-war-thor-digital-art_a2dlbWqUmZqaraWkpJRma2VlrW5lZQ.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://wallpaperaccess.com/full/3301504.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/marvel-avengers-u3-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container bg-image fonts"
+      style="
+        border-style: ridge;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Batman Begins</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Thor:Ragnarok</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Naruto Shippuden</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Avengers:Infinity War</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          Most Watched
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-image">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/johnny-english-strikes-again-movie-z6-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://wallpaperaccess.com/full/983585.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/stranger-things-season-2-xe-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.wallpapersden.com/image/download/star-wars-dark-side_bGVmZ2mUmZqaraWkpJRma2VlrW5lZQ.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container bg-image fonts"
+      style="
+        border-style: ridge;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Johnny English</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>John Wick</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Strangers Things</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Star Wars</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          Blockbusters
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-image">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://cdn2.expertreviews.co.uk/sites/expertreviews/files/2019/09/how-to-watch-the-office-us_lead.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.wallpapersden.com/image/download/jumanji-3_a2xoZWeUmZqaraWkpJRma2VlrW5lZQ.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://images.hdqwalls.com/download/mummy-8k-f0-1600x900.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://cdn.wallpapersafari.com/28/33/pxT1Ns.jpg"
+            class="img-fluid zoom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container bg-image fonts"
+      style="
+        border-style: ridge;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>The Office</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>Jumanji:Welcome to the Jungle</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>The Mummy</a>
+        </div>
+        <div class="col-md-3 text-light" style="font-size: smaller">
+          <a>X-Men:Origins</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 m-20 p-2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 mt-4 mb-2 p-2 text-light text-center bg-image rjs"
+          style="border-style: ridge; border-width: 5px; border-color: black"
+        >
+          <a
+            class="btn btn-warning myfont"
+            id="sam3"
+            style="font-size: larger"
+            role="button"
+            >ABOUT US</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-image text-light m-8 p-4" id="sam4">
+      <div class="row">
+        <div
+          class="col-md-4 fonts"
+          style="font-size: larger; border-style: solid; border-color: gold"
+        >
+          CONTACT US ON - MOVIEBOX@gmail.com<br />
+          FOLLOW US ON SOCIAL MEDIA<br />
+          INSTAGRAM LINKED<br />
+          DAILY NEWS AT YOUR DEVICE<br />
+          ------------------------------------------------
+        </div>
+        <div
+          class="footer-icons col-md-4 p-5"
+          style="
+            font-size: 3.5em;
+            text-align: center;
+            border-style: solid;
+            border-color: goldenrod;
+          "
+        >
+          <a href="https://www.faceboo k.com/netflix/"
+            ><i class="fa fa-facebook zoom" style="color: goldenrod"></i
+          ></a>
+          <a href="https://www.instagram.com/netflix_in/?hl=en"
+            ><i class="fa fa-instagram zoom" style="color: goldenrod"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw"
+            ><i class="fa fa-youtube zoom" style="color: goldenrod"></i
+          ></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"
+            ><i class="fa fa-mobile number zoom" style="color: goldenrod"></i
+          ></a>
+        </div>
+        <div
+          class="col-md-4 fonts"
+          style="font-size: larger; border-style: solid; border-color: gold"
+        >
+          ALL IMAGES ARE SUBJECTED TO COPYRIGHT CLAIMS<br />
+          HELP US GROW, PLEASE DONATE<br />
+          OUR OFFICE LOCATION ATTACHED HERE<br />
+          ------------------------------------------------
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#sam3").click(function () {
+          $("#sam4").fadeOut();
+        });
+      });
+      $(document).ready(function () {
+        $("#sam3").click(function () {
+          $("#sam4").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

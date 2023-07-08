@@ -1,0 +1,71 @@
+.zoom:hover{
+    transform: scale(1.1);
+}
+.rotate{
+    transition: transform 0.5s;
+    height: 300px;
+    margin: 50px;
+}
+.r{
+    font-family: 'Luckiest Guy', cursive;
+}
+.rotate:hover{
+    transform: rotate(25deg);
+}
+.rounder{
+    transition: 0.5s;
+    height: 300px;
+    margin: 50px;
+}
+.rounder:hover{
+    
+    transform: rotate(25deg);
+}
+.shadow-hover{
+    transition: 0.5s;
+    height: 300px;
+    margin: 50px;
+}
+.shadow-hover:hover{
+    box-shadow: 0 0 15px;
+} 
+
+.zoom, .rotationl, .rotationr{
+    transition: transform 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px 3px rgb(46, 41, 41);
+}
+.rotationl:hover{
+    transform:rotate(-9deg);
+    box-shadow: 0px 0px 3px 3px rgb(46, 42, 42);
+}
+.rotationr:hover{
+    transform:rotate(9deg);
+    box-shadow: 0px 0px 3px 3px rgb(51, 48, 48);
+}
+.rounder{
+    transition: all 0.3s;
+}
+.rounder:hover{
+    border: 10px solid rgb(44, 37, 37);
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 3px rgb(43, 39, 39);
+}
+.bg-image{
+    background-image: url(https://wallpapercave.com/wp/4UvMiqH.jpg);
+}
+.bg-image2{
+    background-image: url(https://res.cloudinary.com/rotowire/image/upload/ar_16:7,c_fill,dpr_3.0,f_auto,g_auto:custom_no_override,q_auto,w_400/kllpmapneq7bjqjcjrky.jpg);
+}
+.heyo{
+    font-family: 'Architects Daughter', cursive;
+}
+.hi{
+    font-family: 'Fredoka One', cursive;
+}
+body{
+    background: url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBncmFkaWVudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-size: cover;
+}

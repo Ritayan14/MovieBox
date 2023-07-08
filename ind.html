@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  </head>
+ 
+ 
+ 
+  <body>
+
+    <div style="display: flex;">
+      <img src="download (1).jfif" class="zoom">
+      <img src="download (2).jfif" class="rotate">
+      <img src="download (3).jfif" class="rounder">
+      <img src="download (4).jfif" class="shadow">
+
+    
+    
+    
+    </div>
+
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">HELLO</span>
+  </div>
+</nav>
+
+     <!-- <button id="btn1">DOWN</button>
+<button id="btn2">UP</button>
+<button id="btn3">Toggle</button> -->
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="download (1).jfif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="download (2).jfif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="download (3).jfif" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function(){
+     $("#btn1").click(function(){
+       $("h1").slideDown();
+     })
+    })
+
+    $(document).ready(function(){
+     $("#btn2").click(function(){
+       $("h1").slideUp();
+     })
+    })
+    $(document).ready(function(){
+     $("#btn3").click(function(){
+       $("h1").slideToggle();
+     })
+    })
+
+</script>
+
+<button id="btn4">DOWN</button>
+
+<script>
+  $(document).ready(function(){
+   $("#img1").click(function(){
+     $("#img1").hide();
+   })
+  })
+
+  $(document).ready(function(){
+   $("#img2").click(function(){
+     $("#img2").slideUp();
+   })
+  })
+  $(document).ready(function(){
+   $("#img3").click(function(){
+     $("#img3").fadeOut();
+   })
+  })
+  $(document).ready(function(){
+   $("#img4").click(function(){
+     $("#img4").fadeOut();
+   })
+  })
+  $(document).ready(function(){
+   $("#btn4").click(function(){
+     $("#img1").slideDown();
+     $("#img2").slideDown();
+     $("#img3").slideDown();
+     $("#img4").slideDown();
+   })
+  })
+
+</script>
+<div id="con1" class="container">
+    <div class="row">
+        <div class="col-md-3 p-2">
+            <img src="download (1).jfif" id="img1" class="img-fluid">
+         
+          
+             <img src="download (2).jfif" id="img2" class="img-fluid">
+      
+            
+            <img src="download (3).jfif" id="img3" class="img-fluid">
+        
+           
+             <img src="download (4).jfif" id="img4" class="img-fluid">
+        </div>
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

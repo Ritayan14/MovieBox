@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <title>MovieBox</title>
+  <link rel="icon" href="https://cdn.dribbble.com/users/2264632/screenshots/6708631/final.gif">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <style type="text/css" media="screen">
+    body {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RECsI8UdZGo-nmj5ui_wcLj61SQSrgEhuA&usqp=CAU);
+      padding-top: 80px;
+
+    }
+    .a{
+      font-family: 'Luckiest Guy', cursive;
+    }
+
+    #trailer .modal-dialog {
+      margin-top: 200px;
+      width: 640px;
+      height: 480px;
+    }
+
+    .f {
+      font-family: 'Sigmar One', cursive;
+      color: goldenrod;
+    }
+
+    .hanging-close {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      z-index: 9001;
+    }
+
+    #trailer-video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .movie-tile {
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .fon {
+      font-family: 'Shadows Into Light', cursive;
+    }
+
+    .fontsty {
+      font-family: 'Bangers', cursive;
+      color: goldenrod;
+    }
+
+    .movie-tile:hover {
+      background-color: goldenrod;
+      cursor: pointer;
+
+    }
+
+    .scale-media {
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+
+    .scale-media iframe {
+      border: none;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-color: black;
+    }
+  </style>
+  <script type="text/javascript" charset="utf-8">
+    // Pause the video when the modal is closed
+    $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+      // Remove the src so the player itself gets removed, as this is the only
+      // reliable way to ensure the video stops playing in IE
+      $("#trailer-video-container").empty();
+    });
+    // Start playing the video whenever the trailer modal is opened
+    $(document).on('click', '.movie-tile', function (event) {
+      var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+      var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+      $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+        'id': 'trailer-video',
+        'type': 'text-html',
+        'src': sourceUrl,
+        'frameborder': 0
+      }));
+    });
+    // Animate in the movies when the page loads
+    $(document).ready(function () {
+      $('.movie-tile').hide().first().show("fast", function showNext() {
+        $(this).next("div").show("fast", showNext);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Trailer Video Modal -->
+  <div class="modal" id="trailer">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+          <img
+            src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24" />
+        </a>
+        <div class="scale-media" id="trailer-video-container">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Page Content -->
+  <div class="container p-6">
+    <div class="navbar navbar-inverse navbar-fixed-top p-6" role="navigation">
+      <div class="container-fluid p-6">
+        <div class="navbar-header p-6">
+          <!-- <a class="navbar-brand f" href="#"  style="font-size:xx-large; color: goldenrod;">Movie Trailers</a> -->
+          <a class="navbar-brand a p-6" href="hw.html">
+            <img src="https://cdn.dribbble.com/users/1568191/screenshots/3468993/videezy2.gif" alt="" width="34"
+              height="30" class="d-inline-block align-text-top "><span style="font-size:xx-large; color:goldenrod;">
+              Movie Trailers</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-light">
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="wKtcmiifycU"
+      data-toggle="modal" data-target="#trailer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXmNyUEzAdTVXCSimRmGcupDveWYY4B7WdQ&usqp=CAU"
+        width="220" height="342">
+      <h2 text-light>Iron Man 2</h2>
+      <h5><b>Director: </b> John Debney</h5>
+      <h5><b>Category: </b> Action/sci </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="VG5MtenlP-A"
+      data-toggle="modal" data-target="#trailer">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/The_BFG_poster.jpg/220px-The_BFG_poster.jpg"
+        width="220" height="342">
+      <h2>The BFG</h2>
+      <h5><b>Director: </b> Steven Spielberg </h5>
+      <h5><b>Category: </b> Fantasy </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="2gCbnwavkKc"
+      data-toggle="modal" data-target="#trailer">
+      <img src="https://picfiles.alphacoders.com/172/thumb-172328.jpg" width="220" height="342">
+      <h2>Star Wars</h2>
+      <h5><b>Director: </b> George Lucas </h5>
+      <h5><b>Category: </b> Science Fiction </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="NTya9A4O9Ws"
+      data-toggle="modal" data-target="#trailer">
+      <img src="http://wp.production.patheos.com/blogs/lookingcloser/files/2015/02/american-sniper-poster.jpg"
+        width="220" height="342">
+      <h2>American Sniper</h2>
+      <h5><b>Director: </b> Clint Eastwood </h5>
+      <h5><b>Category: </b> Drama Film </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="JzZh8kJJwe4"
+      data-toggle="modal" data-target="#trailer">
+      <img src="http://www.impawards.com/2016/posters/now_you_see_me_two_ver17.jpg" width="220" height="342">
+      <h2>NOW YOU SEE ME 2</h2>
+      <h5><b>Director: </b> Jon M. Chu </h5>
+      <h5><b>Category: </b> Thriller </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="1UXWIVAIimU"
+      data-toggle="modal" data-target="#trailer">
+      <img src="https://w0.peakpx.com/wallpaper/278/859/HD-wallpaper-secret-life-of-pets-dog.jpg" width="220"
+        height="342">
+      <h2>The Secret Life of Pets</h2>
+      <h5><b>Director: </b> Chris Renaud </h5>
+      <h5><b>Category: </b> Comedy </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="pzD9zGcUNrw"
+      data-toggle="modal" data-target="#trailer">
+      <img src="https://wallpaperaccess.com/full/1727298.jpg" width="220" height="342">
+      <h2 text-light>The Nun</h2>
+      <h5><b>Director: </b> Corin Hardy </h5>
+      <h5><b>Category: </b> Horror </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="d96cjJhvlMA"
+      data-toggle="modal" data-target="#trailer">
+      <img
+        src="https://w0.peakpx.com/wallpaper/169/181/HD-wallpaper-guardians-galaxy-avengers-gamora-guardians-of-the-galaxy-infinity-marvel-movies-star-lord-vol-2.jpg"
+        width="220" height="342">
+      <h2 text-light>Guardians of the Galaxy</h2>
+      <h5><b>Director: </b> James Gunn </h5>
+      <h5><b>Category: </b> Action/Scifi </h5>
+    </div>
+
+    <div class="col-md-6 col-lg-4 movie-tile text-center text-light fon" data-trailer-youtube-id="TcMBFSGVi1c"
+      data-toggle="modal" data-target="#trailer">
+      <img
+        src="https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/99943/disney-plus-avengers-endgame-4k-iphone-8-wallpaper-ilikewallpaper_com.jpg"
+        width="220" height="342">
+      <h2 text-light>Avengers:Endgame</h2>
+      <h5><b>Director: </b> Anthony Russo</h5>
+      <h5><b>Category: </b> Action/Scifi </h5>
+    </div>
+
+  </div>
+</body>
+
+</html>

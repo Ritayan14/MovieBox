@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<title>MovieBox</title>
+<link rel="icon" href="https://cdn.dribbble.com/users/2264632/screenshots/6708631/final.gif">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="hw.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://i.redd.it/y69ercliqi551.png);
+        }
+
+        .t {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        form.example input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            border: 5px ridge rgb(0, 0, 0);
+            float: left;
+            width: 86%;
+            background-color: navajowhite;
+        }
+
+        form.example button {
+            float: right;
+            width: 14%;
+            padding: 6px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 17px;
+            border: 5px ridge black;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        form.example:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand t" href="#" style="font-size: xx-large; color: goldenrod;">Search...</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link t zoom" href="hw.html"><span style="color: goldenrod;">Home</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div class="container p-3 ">
+
+        <form class="example fonts" id="sam3" action="/action_page.php">
+            <input type="text" class="zoom" id="myInput" onkeyup="myFunction()"
+                placeholder="Search for your favourite TV shows and movies...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <button class="btn btn-warning offset-6" id="bt1" style="font-style: italic;">suggestions</button>
+        <div class="container" id="sam4">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul id="myUL">
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color:goldenrod; font-style: italic;">
+                                        Sherlock Holmes
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color:goldenrod; font-style: italic;">
+                                        Outer Banks
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color: goldenrod; font-style: italic;">
+                                        The Good Doctor
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color: goldenrod; font-style: italic;">
+                                        The Originals
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color: goldenrod; font-style: italic;">
+                                        Two and a Half Men
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a>
+                                <div class="card bg-dark">
+                                    <div class="card-body" style="color: goldenrod; font-style: italic;">
+                                        Godzilla
+                                    </div>
+                                </div>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var a, i, txtValue;
+                var input = document.getElementById("myInput");
+                var filter = input.value.toUpperCase();
+                var ul = document.getElementById("myUL");
+                var li = ul.getElementsByTagName("li");
+
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.innerHTML || a.textContent
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+
+    </div>
+
+    <div class="container" style="align-items:center">
+        <div class="row">
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px;text-align: center;">
+                <img src="https://images.wallpapersden.com/image/download/joey-king-and-jacob-elordi-the-kissing-booth_bGZlZmeUmZqaraWkpJRma2VlrW5lZQ.jpg"
+                    class="card-img-top img-fluid zoom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">The Kissing Booth</p>
+                </div>
+            </div>
+
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px; text-align: center;">
+                <img src="https://images.wallpapersden.com/image/download/madelyn-cline-outer-banks-season-2_bG1pbW6UmZqaraWkpJRma2VlrW5lZQ.jpg"
+                    class="card-img-top img-fluid zoom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Outer Banks</p>
+                </div>
+            </div>
+
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px; text-align: center;">
+                <img src="https://wallpaperaccess.com/full/1992048.jpg" class="card-img-top img-fluid zoom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">The Good Docter</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container p-3" style="align-items:center">
+        <div class="row">
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px;text-align: center;">
+                <img src="https://cdn.wallpapersafari.com/1/34/Dgi1BX.png" class="card-img-top img-fluid zoom"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">The Originals</p>
+                </div>
+            </div>
+
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px; text-align: center;">
+                <img src="https://coolwallpapers.me/picsup/5537502-two-and-half-men-wallpapers.jpg"
+                    class="card-img-top img-fluid zoom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Two and a Half Men</p>
+                </div>
+            </div>
+
+            <div class="card col-md-4 fonts bg-image2 text-light" style="height: 250px; text-align: center;">
+                <img src="https://images.wallpapersden.com/image/download/godzilla-4k-8k-banner_a2pnZmiUmZqaraWkpJRma2VlrW5lZQ.jpg"
+                    class="card-img-top img-fluid zoom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Godzilla</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+           
+                $("#sam4").hide();
+
+            
+        });
+
+        $(document).ready(function () {
+            $("#bt1").click(function () {
+                $("#sam4").fadeToggle();
+
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("#sam3").click(function () {
+                $("#sam4").fadeOut();
+
+            });
+        });
+        $(document).ready(function () {
+            $("#sam3").click(function () {
+                $("#sam4").toggle();
+
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

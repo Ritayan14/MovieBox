@@ -1,0 +1,100 @@
+.zoom, .rotationl, .rotationr{
+    transition: transform 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px 3px rgb(46, 41, 41);
+}
+.rotationl:hover{
+    transform:rotate(-9deg);
+    box-shadow: 0px 0px 3px 3px rgb(46, 42, 42);
+}
+.rotationr:hover{
+    transform:rotate(9deg);
+    box-shadow: 0px 0px 3px 3px rgb(51, 48, 48);
+}
+.movie-tile {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.movie-tile:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+
+}
+
+.rounder{
+    transition: all 0.3s;
+}
+.rounder:hover{
+    border: 10px solid rgb(44, 37, 37);
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 3px rgb(43, 39, 39);
+}
+.rjs{
+  font-family: 'Luckiest Guy', cursive;
+  color: goldenrod;
+  }
+  .n{
+    font-family: 'Permanent Marker', cursive;
+  }
+  .fonts{
+    font-family: 'Shadows Into Light', cursive;
+  }
+.bg-image{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RECsI8UdZGo-nmj5ui_wcLj61SQSrgEhuA&usqp=CAU);
+}
+.bg-image2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-X0lN1TTyzBPdIVPCkFwVxe_zGtvwKkMZog&usqp=CAU);
+}
+body{
+    background-image: url(https://i.redd.it/y69ercliqi551.png);
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+

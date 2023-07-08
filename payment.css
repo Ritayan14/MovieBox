@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-image: url("http://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg");
+  margin: 0 5px;
+}
+.zoom, .rotationl, .rotationr{
+  transition: transform 0.5s;
+}
+.zoom:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px rgb(46, 41, 41);
+}
+
+.myfont{
+    font-family: 'Luckiest Guy', cursive;
+}
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color:black;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+    display:flexbox;
+  margin-left: 2px; 
+  margin-right: 2px; 
+  width: 46%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* .payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background:black;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+} */
+/* 
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background:goldenrod;
+  border-radius: 50%;
+} */
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 5px;
+  }
+}

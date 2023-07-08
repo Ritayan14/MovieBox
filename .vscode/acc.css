@@ -1,0 +1,81 @@
+.zoom {
+    transition: transform 0.5s;
+    height: 300px;
+    margin: 50px;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+  
+  .rotate {
+    transition: transform 0.5s;
+    height: 300px;
+    margin: 50px;
+  }
+  
+  .rotate:hover {
+    transform: rotate(25deg);
+  }
+  
+  .rounder {
+    transition: 0.5s;
+    height: 300px;
+    margin: 50px;
+  }
+  
+  .rounder:hover {
+    border-radius: 50%;
+  }
+  
+  .blur-hover {
+    transition: 0.5s;
+    height: 300px;
+    margin: 50px;
+  }
+  
+  .blur-hover:hover {
+    box-shadow: 0 0 20px;
+    filter: blur(1px);
+  } 
+  
+  .contain {
+    position: relative;
+    width: 50%;
+  }
+  
+  .img1 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #000000a9;
+  }
+  
+  .contain:hover .overlay {
+    opacity: 1;
+  }
+  
+  .txt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
